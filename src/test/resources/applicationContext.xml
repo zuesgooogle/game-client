@@ -11,7 +11,7 @@
 	<bean id="clientHandler" class="com.simplegame.client.io.ClientHandler" />
 	<bean id="messageLite" class="com.simplegame.protocol.proto.Message.Response" factory-method="getDefaultInstance"/>
 
-	<bean id="clientInitializer" class="com.simplegame.protocol.codec.NetInitializer">
+	<bean id="clientInitializer" class="com.simplegame.core.io.NetInitializer">
 		<property name="handlers">
 			<list>
 				<ref bean="clientHandler"/>
@@ -31,6 +31,6 @@
 	<!-- 激活利用注解进行装配 -->
 	<context:annotation-config />
 
-	<context:component-scan base-package="com.simplegame.protocol" />
+	<context:component-scan base-package="com.simplegame.client" />
 	
 </beans>
