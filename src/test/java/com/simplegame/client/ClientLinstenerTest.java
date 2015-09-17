@@ -61,7 +61,7 @@ public class ClientLinstenerTest extends BasicTest {
 		
 		client.sendMessage(builder);
 		
-		createRole();
+		//createRole();
 		
 		Thread.sleep(30000);
 	}
